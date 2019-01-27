@@ -51,5 +51,14 @@ setup(
         'Programming Language :: Python :: Implementation :: CPython',
         'Topic :: Utilities',
     ],
-    install_requires=[],
+    install_requires=[
+        'click~=7.0',
+        'graphviz~=0.10',
+        'grimp==1.0b7',
+    ],
+    entry_points={
+        'console_scripts': [
+            'imply = imply.cli:main',
+        ],
+    },
 )
