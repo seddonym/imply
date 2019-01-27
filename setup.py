@@ -21,7 +21,7 @@ def read(*names, **kwargs):
 
 setup(
     name='imply',
-    version='1.0a1',
+    version='1.0a2',
     license='BSD 2-Clause License',
     description="Command line interface for analyzing Python imports.",
     long_description=read('README.rst'),
@@ -39,7 +39,7 @@ setup(
     zip_safe=False,
     classifiers=[
         # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
-        'Development Status :: 1 - Planning',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: Unix',
