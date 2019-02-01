@@ -11,7 +11,7 @@ Changelog
 
 * Add drawgraph command.
 
-latest
-------
+1.0a3 (2019-2-1)
+----------------
 
 * Graph direct instead of indirect imports.

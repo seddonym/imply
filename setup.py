@@ -21,7 +21,7 @@ def read(*names, **kwargs):
 
 setup(
     name='imply',
-    version='1.0a2',
+    version='1.0a3',
     license='BSD 2-Clause License',
     description="Command line interface for analyzing Python imports.",
     long_description=read('README.rst'),
