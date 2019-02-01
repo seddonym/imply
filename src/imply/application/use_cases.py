@@ -1,5 +1,7 @@
 import itertools
 import tempfile
+import sys
+import os
 
 from graphviz import Digraph  # type: ignore
 import grimp  # type: ignore
@@ -11,6 +13,9 @@ def draw_graph(module_name: str) -> None:
     Args:
         module_name: the package or subpackage name of any importable Python package.
     """
+    # Add current directory to the path, as this doesn't happen automatically.
+    sys.path.insert(0, os.getcwd())
+
     module = grimp.Module(module_name)
     graph = grimp.build_graph(module.package_name)
     module_children = graph.find_children(module.name)
