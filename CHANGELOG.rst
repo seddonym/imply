@@ -10,3 +10,8 @@ Changelog
 -----------------
 
 * Add drawgraph command.
+
+latest
+------
+
+* Graph direct instead of indirect imports.

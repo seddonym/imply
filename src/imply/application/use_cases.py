@@ -27,8 +27,8 @@ def draw_graph(module_name: str) -> None:
 
     # Dependencies between children.
     for upstream, downstream in itertools.permutations(module_children, r=2):
-        if graph.chain_exists(imported=upstream, importer=downstream,
-                              as_packages=True):
+        if graph.direct_import_exists(
+                imported=upstream, importer=downstream, as_packages=True):
             dot.edge(downstream, upstream)
 
     source_filename = tempfile.mkstemp()[1]

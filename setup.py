@@ -54,7 +54,7 @@ setup(
     install_requires=[
         'click~=7.0',
         'graphviz~=0.10',
-        'grimp==1.0b7',
+        'grimp==1.0b8',
     ],
     entry_points={
         'console_scripts': [
